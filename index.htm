@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Dashboard Template for Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+            <img src="https://user-static-assets.s3.eu-central-1.amazonaws.com/560f1227f0c117ee57971615/37a1be54-3f4f-441e-b34a-42426b741bf4" alt="">
+          </a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
+                P
+            </button>
+            <!--  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+            </ul> -->
+            <div class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                <div class="col-md-4 left">
+                    <span class="left-label">P</span>
+                </div>
+                <div class="col-md-8 right">
+                    <span class="name">Prodip</span>
+                    <span class="email">Prodip@test.com</span>
+                    <span class="address">2,spring street</span>
+                    <span class="installation">Date of Installation: <span>20-Sep-15</span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <div>
+            <div class="navbar navbar-inverse navbar-fixed-left">
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+                <ul class="nav navbar-nav ">
+                    <li class="active" data-page="index.htm">
+                        <a data-toggle="tooltip" data-placement="right" title="Dashborad">
+                        <i class="fa fa-tachometer" aria-hidden="true"></i>
+                    </a>
+                    </li>
+                    <li data-page="cartridge">
+                        <a data-toggle="tooltip" data-placement="right" title="Cartridge 1">
+                        <i class="fa fa-creative-commons" aria-hidden="true"></i>
+                    </a>
+                    </li>
+                    <li data-page="cartridge">
+                        <a data-toggle="tooltip" data-placement="right" title="Cartridge 2">
+                        <i class="fa fa-creative-commons" aria-hidden="true"></i>
+                    </a>
+                    </li>
+                    <li data-page="cartridge">
+                        <a data-toggle="tooltip" data-placement="right" title="Cartridge 3">
+                        <i class="fa fa-creative-commons" aria-hidden="true"></i>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-fluid main-content">
+            <div class="col-md-12">
+                <div class="col-md-3">
+                    <div class="box-holder">
+                        <h5 class="box-title">State of charge</h5>
+                        <div class="box-content">
+                            <div id="wrapper">
+                              <div class="battery charging"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box-holder">
+                        <h5 class="box-title">State of health</h5>
+                        <div class="box-content">
+                            <span class="value">70%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box-holder">
+                        <h5 class="box-title">Status</h5>
+                        <div class="box-content center-content">
+                            <div class="symbol-area warning">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <span class="warning-text">Your System has no warnings</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box-holder">
+                        <h5 class="box-title">System Temprature</h5>
+                        <div class="box-content center-content">
+                            <span class="">
+                                <span class="temp">50</span>
+                            <span class="temp degree">o</span>
+                            <span class="temp celcius">c</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="box-holder">
+                        <h5 class="box-title">Service Due</h5>
+                        <div class="box-content center-content">
+                            <span class="">
+                                <span class="days-left">30/Jan/2018</span>300 Days Left
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="box-holder ">
+                        <h5 class="box-title">Graph 1</h5>
+                        <div class="box-content graph">
+                            <div class="col-md-4">
+                                <div class="left">
+                                    <img src="images/solar-panel.jpg" alt="">
+                                    <img src="images/power.png" alt="">
+                                    <div class="desc">
+                                        <span>Voltage: 12v</span>
+                                        <span>Current: 5A</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 border">
+                                <canvas id="lineChart1" width="0.9" height="180"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="box-holder ">
+                        <h5 class="box-title">Graph 1</h5>
+                        <div class="box-content graph">
+                            <div class="col-md-4">
+                                <div class="left">
+                                    <img src="images/power-outlet.png" alt="">
+                                    <div class="desc">
+                                        <span>Voltage: 12v</span>
+                                        <span>Current: 5A</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 border">
+                                <canvas id="lineChart2" width="0.9" height="180"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div id="map" style="width:100%;height:400px;"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/Chart.min.js"></script>
+        <script src="js/charting.js"></script>
+        <script>
+        function myMap() {
+            var myLatLng = { lat: -25.363, lng: 131.044 };
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 10,
+                center: myLatLng
+            });
+
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'Hello World!'
+            });
+        }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9WVVQqHm7_O17Ks1eRdIec49cnL2yBcw&callback=myMap"></script>
+        <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+        <!-- <script src="../../assets/js/vendor/holder.min.js"></script> -->
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+</body>
+
+</html>
