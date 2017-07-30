@@ -225,6 +225,32 @@
     height: 100%;
     text-align: center;
 }
+.health_charge_text{
+	display: block;
+	text-align: center;
+	margin-top: -43px;
+	font-size: 30px;
+	color: #006FBA;
+}
+.health_charge .piechart-label{
+	margin: 15px 0;
+	text-align: center;
+}
+.health_charge .title .label{
+	height: 10px;
+	width: 10px;
+	display: inline-block;
+	font-family: myriad_light;
+	border: 1px solid #ccc;
+}
+.health_charge .title .first.label{
+	background: #FFCE56;
+}
+.health_charge .title:last-child .label{
+	background: #a7b1c2;
+	margin-left: 15px;
+}
+
 
 .box-content .left img,
 .box-content .right img {
@@ -300,7 +326,9 @@
 .cartridge .remaining-days {
     padding-top: 40px;
 }
-
+.cartridge a span{
+	color: #6d6b6b !important;
+}
 
 /*.table{
 	width: initial;
@@ -338,7 +366,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #3ea750;
     -webkit-transition: .4s;
     transition: .4s;
 }
