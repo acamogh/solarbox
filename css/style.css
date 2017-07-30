@@ -1,6 +1,6 @@
 @font-face {
     font-family: myriad_bold;
-    src: url(../fonts/Myriad-Pro-Bold.ttf);
+    src: url(../fonts/MyriadBold-Normal.ttf);
 }
 
 @font-face {
@@ -14,8 +14,19 @@
     right: 45px;
     top: 6px;
 }
+.box-version{
+	display: inline-block;
+	padding-right: 40px;
+}
+.box-version span{
+	display: block;
+	font-family: myriad_light;
+	color: #EDF4FA;
+}
+
 
 .dropdown .btn {
+	vertical-align: 11px;
     background: #C2185B !important;
     width: 40px;
     height: 40px;
@@ -83,7 +94,8 @@
 
 .navbar-brand img {
     padding-left: 35px;
-    height: 30px;
+    height: 26px;
+    width: 18%;
 }
 
 .navbar-header {
@@ -179,10 +191,10 @@
     text-transform: uppercase;
 }
 
-
-/*#StateOfCharge{
-	width: 200px !important;
-	height: 200px !important;
+/*
+#StateOfCharge{
+	width: 80px !important;
+	height: 30px !important;
 	margin: 0 auto;
 }*/
 
@@ -227,14 +239,15 @@
 }
 .health_charge_text{
 	display: block;
-	text-align: center;
-	margin-top: -43px;
-	font-size: 30px;
-	color: #006FBA;
+	    text-align: center;
+	    margin-top: -30px;
+	    font-size: 19px;
+	    color: #006FBA;
 }
-.health_charge .piechart-label{
+.health_charge .graph-label{
 	margin: 15px 0;
 	text-align: center;
+	font-size: 11px;
 }
 .health_charge .title .label{
 	height: 10px;
@@ -254,7 +267,7 @@
 
 .box-content .left img,
 .box-content .right img {
-    width: 47%;
+    width: 75%;
     padding: 0 11px;
 }
 
@@ -316,6 +329,7 @@
 
 .temp.celcius {
     display: inline-block;
+    font-size: 45px;
 }
 
 .temp.degree {
@@ -410,7 +424,10 @@ input:checked+.slider:before {
 
 .graph .desc {
     font-family: myriad_light;
-    padding-top: 15px;
+    padding-top: 30px;
+}
+.graph.discharging .desc{
+	padding-top: 5px;
 }
 
 .graph .desc span {
@@ -420,6 +437,9 @@ input:checked+.slider:before {
 
 .graph .border {
     border-left: 1px solid #E9F1F1;
+}
+.graph.discharging img{
+	width: 94%;
 }
 
 body {

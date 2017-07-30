@@ -31,7 +31,6 @@ $(document).ready(function() {
 
     // line Chart
     var lineChart1 = document.getElementById("lineChart1").getContext('2d');
-    Chart.defaults.global.defaultFontFamily = 'Myriad-Pro-Regular.ttf';
     var myChart = new Chart(lineChart1, {
         type: 'line',
         data: {
@@ -57,24 +56,16 @@ $(document).ready(function() {
                 yAxes: [{
                     display: true,
                     ticks: {
-                        suggestedMin: 0, // minimum will be 0, unless there is a lower value.
-                        // OR //
                         beginAtZero: true, // minimum value will be 0.
                         suggestedMax: 10
                     },
-                    gridLines: {
-                        display: false
-                    },
                     pointLabels: {
-                        fontFamily: "'myriad_light'"
+                        fontFamily: "myriad_light"
                     }
                 }],
                 xAxes: [{
-                    gridLines: {
-                        display: false
-                    },
                     ticks: {
-                        fontFamily: "'myriad_light'",
+                        fontFamily: "myriad_light",
                     }
                 }],
             }

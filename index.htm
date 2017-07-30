@@ -28,14 +28,20 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#">
-            <img src="https://user-static-assets.s3.eu-central-1.amazonaws.com/560f1227f0c117ee57971615/37a1be54-3f4f-441e-b34a-42426b741bf4" alt="">
+            <img src="images/SB_Logo_White.png" alt="">
           </a>
             </div>
         </div>
+
         <div class="dropdown">
+            <div class="box-version">
+                <span class="box-id">Box-ID: 212</span>
+                <span class="sft-version">Software-Version: 2112jkk21</span>
+            </div>
             <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
                 P
             </button>
+
             <!--  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
               <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
               <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
@@ -116,30 +122,30 @@
                     <div class="box-holder">
                         <h5 class="box-title">State of health</h5>
                         <div class="box-content health_charge">
-                        <div class="piechart-label">
+                        <div class="graph-label">
                             <span class="title">
                                 <span class="first label"></span>
                                 <span class="label-text">Charge Remaining</span>
                             </span>
                             <span class="title">
                                 <span class="label"></span>
-                                <span class="label-text">Charge Used</span>
+                                <span class="label-text">Charge Degradation</span>
                             </span>
                         </div>
                             <canvas id="StateOfCharge" width="80" height="30"></canvas>
-                            <span class="health_charge_text">60%</span>
+                            <span class="health_charge_text">30/40Ah</span>
 
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="box-holder">
-                        <h5 class="box-title">Status</h5>
+                        <h5 class="box-title">System Status</h5>
                         <div class="box-content center-content">
                             <div class="symbol-area warning">
                                 <i class="fa fa-check"></i>
                             </div>
-                            <span class="warning-text">Your System has no warnings</span>
+                            <span class="warning-text">Everything runs fine</span>
                         </div>
                     </div>
                 </div>
@@ -160,18 +166,17 @@
                         <h5 class="box-title">Service Due</h5>
                         <div class="box-content center-content">
                             <span class="">
-                                <span class="days-left">30/Jan/2018</span>300 Days Left
+                                <span class="days-left">30.Jan.2020</span>300 Days Left
                             </span>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-5">
                     <div class="box-holder ">
-                        <h5 class="box-title">Graph 1</h5>
+                        <h5 class="box-title">Charging</h5>
                         <div class="box-content graph">
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                                 <div class="left">
-                                    <img src="images/solar-panel.jpg" alt="">
                                     <img src="images/power.png" alt="">
                                     <div class="desc">
                                         <span>Voltage: 12v</span>
@@ -179,7 +184,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-8 border">
+                            <div class="col-md-9 border">
                                 <canvas id="lineChart1" width="0.9" height="180"></canvas>
                             </div>
                         </div>
@@ -187,9 +192,9 @@
                 </div>
                 <div class="col-md-5">
                     <div class="box-holder ">
-                        <h5 class="box-title">Graph 1</h5>
-                        <div class="box-content graph">
-                            <div class="col-md-4">
+                        <h5 class="box-title">Discharging</h5>
+                        <div class="box-content graph discharging">
+                            <div class="col-md-3">
                                 <div class="left">
                                     <img src="images/power-outlet.png" alt="">
                                     <div class="desc">
@@ -198,7 +203,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-8 border">
+                            <div class="col-md-9 border">
                                 <canvas id="lineChart2" width="0.9" height="180"></canvas>
                             </div>
                         </div>
