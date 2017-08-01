@@ -26,6 +26,7 @@
 
 
 .dropdown .btn {
+	padding: 6px 8px;
 	vertical-align: 11px;
     background: #C2185B !important;
     width: 40px;
@@ -73,16 +74,43 @@
     padding: 4px 0;
 }
 
-.dropdown .dropdown-menu span.email,
+.dropdown .dropdown-menu span.phone,
 .dropdown .dropdown-menu span.address,
 .dropdown .dropdown-menu span.installation {
     color: #969595 !important;
+    font-size: 13px;
+}
+.dropdown .dropdown-menu span.phone{
+	margin-top: -7px;
+
 }
 
 .dropdown .dropdown-menu .right .installation,
 .dropdown .dropdown-menu .right .installation span {
     display: inline-block;
+    font-size: 13px;
 }
+
+.dropdown  .dropdown-menu::before {
+    border-bottom: 9px solid rgba(0, 0, 0, 0.2);
+    border-left: 9px solid rgba(0, 0, 0, 0);
+    border-right: 9px solid rgba(0, 0, 0, 0);
+    content: "";
+    display: inline-block;
+    right: 29px;
+    position: absolute;
+    top: -8px;
+}
+  .dropdown  .dropdown-menu::after {
+    border-bottom: 8px solid #FFFFFF;
+    border-left: 9px solid rgba(0, 0, 0, 0);
+    border-right: 9px solid rgba(0, 0, 0, 0);
+    content: "";
+    display: inline-block;
+    right: 29px;
+    position: absolute;
+    top: -7px;
+  }
 
 .navbar-fixed-top {
     background-color: hsl(210, 62%, 48%);
