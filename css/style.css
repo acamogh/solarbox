@@ -339,7 +339,7 @@
     font-family: myriad_light;
     font-size: 52px;
     color: #006fba;
-    display: block;
+    display: inline-block;
 }
 
 .temp {
@@ -375,9 +375,12 @@
 /*.table{
 	width: initial;
 }*/
-
+.table th{
+	text-align: center;
+}
 .table tr td {
     height: 80px;
+    text-align: center;	
 }
 
 .table td {

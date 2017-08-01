@@ -97,10 +97,20 @@ $(document).ready(function() {
         options: {
             scales: {
                 yAxes: [{
+                    display: true,
                     ticks: {
-                        reverse: false
+                        beginAtZero: true, // minimum value will be 0.
+                        suggestedMax: 10
+                    },
+                    pointLabels: {
+                        fontFamily: "myriad_light"
                     }
-                }]
+                }],
+                xAxes: [{
+                    ticks: {
+                        fontFamily: "myriad_light",
+                    }
+                }],
             }
         }
     })
