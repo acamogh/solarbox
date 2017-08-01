@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -15,7 +15,7 @@
     <link href="css/dashboard.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
-</head>
+</head> 
 
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -50,31 +50,33 @@
         </div>
     </nav>
     <div>
-        <div>
-            <div class="navbar navbar-inverse navbar-fixed-left">
-                <ul class="nav navbar-nav ">
-                    <li data-page="index.htm">
-                        <a data-toggle="tooltip" data-placement="right" title="Dashborad">
-                        <i class="fa fa-tachometer" aria-hidden="true"></i>
-                    </a>
-                    </li>
-                    <li class="active" data-page="cartridge">
-                        <a data-toggle="tooltip" data-placement="right" title="Cartridge 1">
-                        <i class="fa fa-creative-commons" aria-hidden="true"></i>
-                    </a>
-                    </li>
-                    <li data-page="cartridge">
-                        <a data-toggle="tooltip" data-placement="right" title="Cartridge 2">
-                        <i class="fa fa-creative-commons" aria-hidden="true"></i>
-                    </a>
-                    </li>
-                    <li data-page="cartridge">
-                        <a data-toggle="tooltip" data-placement="right" title="Cartridge 3">
-                        <i class="fa fa-creative-commons" aria-hidden="true"></i>
-                    </a>
-                    </li>
-                </ul>
-            </div>
+        <div class="navbar navbar-inverse navbar-fixed-left">
+            <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+            <ul class="nav navbar-nav ">
+                <li data-page="index.htm">
+                    <a data-toggle="tooltip" data-placement="right" title="Dashborad">
+                            <i class="fa fa-tachometer" aria-hidden="true"></i>
+                        </a>
+                </li>
+                <li data-page="cartridge" class="cartridge active"  >
+                    <a data-toggle="tooltip" data-placement="right" title="Cartridge 1" href="cartridge.html">
+                            <span>C1</span>
+                        </a>
+                </li>
+                <li data-page="cartridge" class="cartridge">
+                    <a data-toggle="tooltip" data-placement="right" title="Cartridge 2" href="cartridge.html">
+                            <span>C2</span>
+                        </a>
+                </li>
+                <li data-page="cartridge" class="cartridge">
+                    <a data-toggle="tooltip" data-placement="right" title="Cartridge 3" href="cartridge.html">
+                            <span>C3</span>
+                        </a>
+                </li>
+            </ul>
         </div>
         <div class="container-fluid main-content cartridge">
             <div class="col-md-3">
@@ -110,7 +112,6 @@
                                     <th>#</th>
                                     <th>Battery ID</th>
                                     <th>Manufacturer</th>
-                                    
                                     <th>Supplier</th>
                                     <th>Manufacturing Year</th>
                                     <th>Category</th>
@@ -275,7 +276,6 @@
                                     <td>July</td>
                                     <td>Dooley</td>
                                     <td>july@example.com</td>
-                                    
                                     <td>july@example.com</td>
                                     <td>July</td>
                                     <td>Dooley</td>
@@ -285,7 +285,6 @@
                                     <td>July</td>
                                     <td>Dooley</td>
                                     <td>july@example.com</td>
-                                    
                                     <td>july@example.com</td>
                                     <td>July</td>
                                     <td>Dooley</td>
@@ -295,7 +294,6 @@
                                     <td>July</td>
                                     <td>Dooley</td>
                                     <td>july@example.com</td>
-                                    
                                     <td>july@example.com</td>
                                     <td>July</td>
                                     <td>Dooley</td>
@@ -305,7 +303,6 @@
                                     <td>July</td>
                                     <td>Dooley</td>
                                     <td>july@example.com</td>
-                                    
                                     <td>july@example.com</td>
                                     <td>July</td>
                                     <td>Dooley</td>
@@ -315,7 +312,6 @@
                                     <td>July</td>
                                     <td>Dooley</td>
                                     <td>july@example.com</td>
-                                    
                                     <td>july@example.com</td>
                                     <td>July</td>
                                     <td>Dooley</td>
@@ -325,7 +321,6 @@
                                     <td>July</td>
                                     <td>Dooley</td>
                                     <td>july@example.com</td>
-                                    
                                     <td>july@example.com</td>
                                     <td>July</td>
                                     <td>Dooley</td>
